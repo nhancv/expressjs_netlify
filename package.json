@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "netlify-lambda build express && mkdir dist && mv functions dist/",
+    "build": "rm -rf dist && mkdir -p dist && netlify-lambda build express",
     "start": "netlify-lambda serve express"
   },
   "devDependencies": {
